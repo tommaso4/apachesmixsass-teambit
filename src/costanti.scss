@@ -1,0 +1,112 @@
+
+$back-col: #ffe7d2;
+$text-col: #58402c;
+
+@mixin flexAlCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin buttonBlue {
+  border: 1px solid rgb(0, 10, 119);
+  color: rgb(0, 10, 119);
+  padding:10px;
+  border-radius: 5px;
+  &:hover {
+    background: rgb(0, 10, 119);
+    color: white;
+  }
+  i  {
+    padding: 0 10px 0 0;
+  }
+}
+
+@mixin btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: rgb(53, 64, 189);
+  border: 1px solid rgb(53, 64, 189);
+  color: white;
+  border-radius: 10px;
+  &:hover {
+    background: rgb(35, 0, 83);
+    cursor: pointer;
+  }
+}
+
+@mixin cont-wid {
+  width: 90%;
+  margin: auto;
+  padding: 0 80px;
+}
+
+@mixin brown {
+  background: $back-col;
+  @include flexAlCenter;
+  flex-direction: column;
+  padding-top: 80px;
+  h1{
+    font-size: 22px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-col;
+  font-family: 'Trocchi', serif;
+}
+
+i {
+  padding: 0 10px;
+}
+
+a {
+  color: $text-col;
+  text-decoration: none;
+  &:hover {
+    color: blue;
+  }
+}
+.left {
+  img {
+    width: 770px;
+  }
+}
+.right {
+  width: 400px;
+  img {
+    width: 270px;
+  }
+  h1 {
+    margin: 20px 0;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  p {
+    margin: 40px 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  img {
+    margin: 25px 0;
+  }
+}
+
+.f-a {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  line-height: 30px;
+  margin: 0 20px;
+  a {
+    font-size: 14px;
+  }
+  h4 {
+    margin-bottom: 25px;
+  }
+}

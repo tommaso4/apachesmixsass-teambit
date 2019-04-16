@@ -1,0 +1,64 @@
+header {
+  height: 70px;
+  background-color: $back-col;
+  @include flexAlCenter;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: thick double $text-col;
+
+  .conteiner {
+    display: flex;
+    justify-content: space-between;
+    @include cont-wid;
+  }
+
+  .logo {
+    @include flexAlCenter;
+    font-size: 25px;
+
+    img {
+      height: 40px;
+      padding: 0 10px;
+    }
+  }
+
+  .menu {
+    @include flexAlCenter;
+    position: relative;
+
+    a {
+      padding: 0 40px;
+      font-size: 18px;
+      @include flexAlCenter;
+    }
+
+    .wrapper-menu:hover .wrapper {
+      display: block;
+    }
+
+    .wrapper {
+      display: none;
+      background: white;
+      position: absolute;
+      top: 35px;
+      left: 35px;
+      border-radius: 10px;
+      border: 1px solid $text-col;
+
+      p {
+        font-size: 16px;
+        padding: 4px 15px;
+        &:hover {
+          color: blue;
+          cursor: pointer;
+        }
+      }
+    }
+
+    button {
+      @include buttonBlue;
+    }
+  }
+}

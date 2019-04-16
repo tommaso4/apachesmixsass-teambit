@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #58402c;
+  font-family: "Trocchi", serif;
+}
+
+i {
+  padding: 0 10px;
+}
+
+a {
+  color: #58402c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+.left img {
+  width: 770px;
+}
+
+.right {
+  width: 400px;
+}
+
+.right img {
+  width: 270px;
+}
+
+.right h1 {
+  margin: 20px 0;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.right p {
+  margin: 40px 0;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.right img {
+  margin: 25px 0;
+}
+
+.f-a {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  line-height: 30px;
+  margin: 0 20px;
+}
+
+.f-a a {
+  font-size: 14px;
+}
+
+.f-a h4 {
+  margin-bottom: 25px;
+}
+
+header {
+  height: 70px;
+  background-color: #ffe7d2;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: thick double #58402c;
+}
+
+header .conteiner {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 0 80px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+header .logo img {
+  height: 40px;
+  padding: 0 10px;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header .menu a {
+  padding: 0 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+header .menu .wrapper-menu:hover .wrapper {
+  display: block;
+}
+
+header .menu .wrapper {
+  display: none;
+  background: white;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-radius: 10px;
+  border: 1px solid #58402c;
+}
+
+header .menu .wrapper p {
+  font-size: 16px;
+  padding: 4px 15px;
+}
+
+header .menu .wrapper p:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+header .menu button {
+  border: 1px solid #000a77;
+  color: #000a77;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header .menu button:hover {
+  background: #000a77;
+  color: white;
+}
+
+header .menu button i {
+  padding: 0 10px 0 0;
+}
+
+.first {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 0 80px;
+  margin: 80px;
+}
+
+.first .first-text {
+  height: 100%;
+  width: 50%;
+  padding: 80px 80px 0 20px;
+}
+
+.first .first-text h1 {
+  font-size: 50px;
+}
+
+.first .first-text p {
+  font-size: 20px;
+  padding: 30px 0;
+  line-height: 40px;
+}
+
+.first .img-first {
+  height: 100%;
+  width: 50%;
+  padding: 80px 0;
+}
+
+.first .img-first img {
+  width: 100%;
+  height: 100%;
+}
+
+.first .btn {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.first .btn span {
+  padding: 0 20px;
+}
+
+.first .btn button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #3540bd;
+  border: 1px solid #3540bd;
+  color: white;
+  border-radius: 10px;
+}
+
+.first .btn button:hover {
+  background: #230053;
+  cursor: pointer;
+}
+
+.second {
+  background: #ffe7d2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.second h1 {
+  font-size: 22px;
+}
+
+.second-img {
+  display: flex;
+  padding: 100px 0;
+}
+
+.second-img div {
+  width: 160px;
+  margin: 0 30px;
+}
+
+.second-img img {
+  width: 140px;
+  height: 120px;
+  padding-bottom: 10px;
+}
+
+.second-img p {
+  text-align: center;
+}
+
+.rabbit-img img {
+  width: 280px;
+}
+
+.hr {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #58402c;
+  padding-top: 80px;
+}
+
+.terzo {
+  background: #ffe7d2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.terzo h1 {
+  font-size: 22px;
+}
+
+.quarto {
+  display: flex;
+  padding: 80px 0;
+}
+
+.quinto {
+  display: flex;
+  padding-bottom: 80px;
+  flex-direction: row-reverse;
+}
+
+.sesto {
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.sesto .right img {
+  width: 320px;
+}
+
+.settimo {
+  display: flex;
+  padding-bottom: 80px;
+  flex-direction: row-reverse;
+}
+
+.chi-siamo {
+  background: #ffe7d2;
+  text-align: center;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chi-siamo h1 {
+  padding: 10px;
+}
+
+.chi-siamo .story {
+  margin-top: 50px;
+  width: 630px;
+  background: white;
+  border: 1px solid #58402c;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.chi-siamo .story p {
+  margin: 35px;
+}
+
+.chi-siamo .story .story-img {
+  display: flex;
+}
+
+.chi-siamo .story .story-img .cont-img {
+  margin-left: 25px;
+}
+
+.chi-siamo .story .story-img .cont-img img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.chi-siamo .story .story-img .cont-p {
+  margin-bottom: 35px;
+}
+
+.chi-siamo .story .story-img .cont-p p {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.chi-siamo .story-btn {
+  margin: 25px 0;
+}
+
+.chi-siamo .story-btn button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #3540bd;
+  border: 1px solid #3540bd;
+  color: white;
+  border-radius: 10px;
+}
+
+.chi-siamo .story-btn button:hover {
+  background: #230053;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  margin: 60px 150px;
+}
+
+footer .foot-logo {
+  display: flex;
+  min-width: 400px;
+}
+
+footer .foot-logo img {
+  margin-right: 20px;
+  width: 50px;
+}
+
+footer .foot-right {
+  display: flex;
+  margin-left: 50px;
+}
+
